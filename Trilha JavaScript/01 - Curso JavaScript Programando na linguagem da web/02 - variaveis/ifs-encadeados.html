@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Ifs encadeados</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+
+		var ehEstagiario = true;
+		var ehCLT = false;
+
+		if (ehEstagiario || ehCLT) { 
+			// se o salario mensal for maior que 0 	e menor que 1000 o bonus será de 5%
+			// se não cair na primeira condição e o salario for menor que 2000  o bonus será de 10%
+			// se não cair nas condições anteriores bonus será de 15%
+
+			var salarioMensal = 800;
+			var comissao = 0;
+			var percentual = 0;
+
+			if (salarioMensal > 0 && salarioMensal < 1000) {
+				percentual = 5;
+			} else if (salarioMensal < 2000) {
+				percentual = 10;
+			} else {
+				percentual = 15;
+			}
+
+			comissao = (salarioMensal/100) * percentual;
+
+			console.log("Comissão é de " + comissao);
+			console.log("Percentual da comissão é de " + percentual);
+			console.log("Salário é de " + salarioMensal);
+		}
+
+	</script>
+</body>
+</html>

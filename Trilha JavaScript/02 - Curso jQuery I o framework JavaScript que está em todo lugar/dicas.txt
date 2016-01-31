@@ -1,0 +1,13 @@
+jQuery usa os mesmos seletores do CSS, inclusive do CSS3. Para selecionar um elemento pela id usamos a # concatenando o valor do atributo id (aqui #site). Uma classe é selecionada pelo ponto (aqui .treinamento). Por último selecionamos um elemento pelo nome da tag (aqui textarea):
+
+
+Eventos :
+
+O jQuery tem funções para outro eventos, como o blur(). Disparado toda vez que o usuário deixar um elemento. mouseover(), quando o mouse estiver sobre o elemento. Há também o dblclick(), quando o elemento for clicado duas vezes em seguida. Há também o change(), quando o valor de mudar.
+
+ change
+ blur
+ load
+ keyup
+ focus
+ click
